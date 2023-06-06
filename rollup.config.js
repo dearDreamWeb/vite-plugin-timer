@@ -1,10 +1,12 @@
-import terser from '@rollup/plugin-terser';
+const terser = require('@rollup/plugin-terser');
+const resolve = require('rollup-plugin-node-resolve');
 
-export default {
+module.exports = {
     input: 'src/index.js',
     output: {
-      file: 'dist/index.js',
-      format: 'es'
+        file: 'dist/index.js',
+        format: 'cjs',
+        name: 'index'
     },
-    plugins: [terser()]
-  };
+    plugins: [terser(), resolve()]
+};

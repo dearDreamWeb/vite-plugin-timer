@@ -1,9 +1,9 @@
-import colorsConsole from 'colors-console'
+const colorsConsole = require('colors-console');
 /**
  * 打印build的时间
  * @returns 
  */
-export default function timerPlugin(props = {}) {
+function timerPlugin(props = {}) {
     const { color, text } = props;
     let startTime = +new Date();
     return {
@@ -18,3 +18,5 @@ export default function timerPlugin(props = {}) {
         },
     }
 }
+console.log('\x1B[31m%s\x1B[0m', '这是红色')
+module.exports = timerPlugin;
