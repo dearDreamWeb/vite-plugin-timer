@@ -1,0 +1,44 @@
+# vite-plugin-timer
+vite打包过程的时间所消耗的时间显示出来。
+
+# 安装
+```bash
+npm i vite-plugin-timer -D
+```
+
+# 使用
+```js
+import vitePluginTimer from 'vite-plugin-timer';
+export default {
+    ...
+    plugins:[
+        ...
+        vitePluginTimer()
+    ]
+}
+```
+
+# 参数
+- color
+类型： `string`  
+默认值： `blue`  
+可自定义字体颜色，默认是蓝色`blue`。
+
+- text
+类型： `string`  
+默认值： `build complete:`  
+可自定义文案，默认是`build complete:`。  
+
+例子
+```js
+import vitePluginTimer from 'vite-plugin-timer';
+
+export default {
+  plugins: [
+    vitePluginTimer({
+        color:'yellow',
+        text: '打包完成：'
+    })
+  ]
+};
+```

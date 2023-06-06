@@ -1,0 +1,1 @@
+import e from"colors-console";function t(t={}){const{color:o,text:l}=t;let n=+new Date;return{name:"timer",buildStart(){n=+new Date},buildEnd(){const t=(+new Date-n)/1e3,r=t%1?t.toFixed(2):t;console.log(e(o||"blue",`${l||"build complete:"} ${r}s`))}}}export{t as default};
