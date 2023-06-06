@@ -22,7 +22,18 @@ export default {
 - color
 类型： `string`  
 默认值： `blue`  
-可自定义字体颜色，默认是蓝色`blue`。
+可自定义字体颜色，默认是蓝色`blue`。  
+可选值  
+
+  |  值   | 说明  |
+  |  ----  | ----  |
+  | red  | 红色 |
+  | green  | 绿色 |
+  | yellow  | 黄色 |
+  | blue  | 蓝色 |
+  | magenta  | 品红 |
+  | cyan  | 青色 |
+  | white  | 白色 |
 
 - text
 类型： `string`  

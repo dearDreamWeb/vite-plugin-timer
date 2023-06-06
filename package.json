@@ -1,14 +1,15 @@
 {
   "name": "vite-plugin-timer",
-  "version": "1.2.2",
+  "version": "1.2.5",
   "description": "vite打包过程的时间所消耗的时间显示出来。 (The time consumed by the vite packaging process is displayed.)",
   "homepage": "https://github.com/dearDreamWeb/vite-plugin-timer",
   "bugs": "https://github.com/dearDreamWeb/vite-plugin-timer/issues",
-  "main": "/dist/index.js",
-  "module": "/dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./typings/index.d.ts",
   "scripts": {
-    "build": "rollup -c",
-    "prepublish": "npm run build"
+    "build": "npx tsc && rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "vite-plugin",
@@ -18,12 +19,10 @@
   ],
   "author": "wxb",
   "license": "ISC",
-  "dependencies": {
-    "colors-console": "^1.0.3"
-  },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.3",
     "rollup": "^3.23.1",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^5.1.3"
   }
 }
