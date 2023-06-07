@@ -1,8 +1,4 @@
-type Color = 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white';
-
-type ColorMap = {
-  [key in Color]: string;
-};
+import { ColorMap, Props } from '../index';
 
 const colorMap: ColorMap = {
   red: '\x1B[31m', // 红色
@@ -13,11 +9,6 @@ const colorMap: ColorMap = {
   cyan: '\x1B[36m', // 青色
   white: '\x1B[37m', // 白色
 };
-
-interface Props {
-  color?: Color;
-  text?: string;
-}
 
 /**
  * 打印build的时间
@@ -41,4 +32,5 @@ function timerPlugin(props: Props = {}) {
     },
   };
 }
-module.exports = timerPlugin;
+
+export default timerPlugin;

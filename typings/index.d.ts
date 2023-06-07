@@ -1,12 +1,4 @@
-type Color = 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white';
-type ColorMap = {
-    [key in Color]: string;
-};
-declare const colorMap: ColorMap;
-interface Props {
-    color?: Color;
-    text?: string;
-}
+import { Props } from '../index';
 /**
  * 打印build的时间
  * @returns
@@ -16,3 +8,4 @@ declare function timerPlugin(props?: Props): {
     buildStart(): void;
     buildEnd(): void;
 };
+export default timerPlugin;
