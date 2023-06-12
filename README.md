@@ -1,12 +1,12 @@
 # vite-plugin-timer
 vite打包过程的时间所消耗的时间显示出来。
 
-# 安装
+# 📦 安装
 ```bash
 npm i vite-plugin-timer -D
 ```
 
-# 使用
+# 🔨 使用
 ```js
 import vitePluginTimer from 'vite-plugin-timer';
 export default {
@@ -18,7 +18,10 @@ export default {
 }
 ```
 
-# 参数
+# 🎉 效果
+![效果图](/images/image01.png/)
+
+# 🔗 参数
 - color
 类型： `string`  
 默认值： `blue`  
