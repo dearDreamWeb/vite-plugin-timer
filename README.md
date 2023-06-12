@@ -19,7 +19,7 @@ export default {
 ```
 
 # 🎉 效果
-![效果图](/images/image01.png/)
+![效果图](https://raw.githubusercontent.com/dearDreamWeb/vite-plugin-timer/main/images/image01.png)
 
 # 🔗 参数
 - color
